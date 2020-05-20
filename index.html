@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=dge"/>
+        <title>Interactive 3d application</title>
+        <script src="gl-matrix-min.js"></script>
+        <script src="main.js"></script>
+        <script src="ObjCone.js"></script>
+
+
+
+    </head>
+    <body onload="start();">
+        <canvas id='canvas' width='1000' height='500'></canvas>
+        <div>
+        <br />
+        <b>Made by: Aleksandar Stojkov</b>
+        <br />
+        <br />
+ In this lab assignment we are showing different models of shading and illumination.<br /><br />    
+ <b>The  available models are shown below
+    </b> -  <br /><br/>
+    Gouraud/diffuse - Gouraud shading (vertex shading) with diffuse illumination.<br />
+
+    Gouraud/specular - Gouraud shading (vertex shading) with the Phong illumination model to produce a specular highlight.<br />
+    
+    Phong/diffuse - Phong shading (pixel shading) with diffuse illumination.<br />
+    
+    Phong/specular - Phong shading (pixel shading) with the Phong illumination model to produce a specular highlight.<br /><br/>
+
+<b>The user should be able to select the active lighting and shading models used by pressing the number keys between:</b><br />
+'u' (Gouraud/diffuse)<br />
+'i' (Gouraud/specular)<br />
+'o' (Phong/diffuse)<br />
+'p' (Phong/specular).<br /><br />
+The user can interact with the shapes and with the light position.By clicking the 'L' button, the user will activate the movement of light.<br />
+By clicking the 'C' button it will activate the camera movement. <br />
+<b>Translations (using arrow keys)</b> - <br />
+">" (right): move the shape/light/camera to the right <br />
+"<" (left): move the shape/light/camera to the left <br />
+"/\" (up): move the shape/light/camera up <br />
+"\/" (down): move the shape/light/camera down <br />
+"," (comma): move the shape/light forward <br />
+"." (period): move the shape/light backward <br />
+        </div>
+    </body>
+</html>
